@@ -46,4 +46,14 @@ const fizzBuzz = (number, fizz = 3, buzz = 5, fizzBuzz = null) => {
   return arr
 }
 
-export { palindromeCheck, betweenLapYear, reverseWord, fizzBuzz }
+const getNearestFibonacci = (suku, satu = 0, dua = 1) => {
+  return dua < suku ? getNearestFibonacci(suku, dua, satu + dua) : dua - suku > suku - satu ? satu : dua
+}
+
+const nearestFibonacci = (arr) => {
+  const number = arr.reduce((a, b) => a + b)
+  return Math.abs(getNearestFibonacci(number) - number)
+}
+
+
+export { palindromeCheck, betweenLapYear, reverseWord, fizzBuzz, nearestFibonacci }

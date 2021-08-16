@@ -1,5 +1,5 @@
 import { logTitle } from './helpers.js'
-import { palindromeCheck, betweenLapYear, reverseWord, fizzBuzz } from './logicTest.js'
+import { palindromeCheck, betweenLapYear, reverseWord, fizzBuzz, nearestFibonacci } from './logicTest.js'
 
 logTitle('Palindrome')
 
@@ -20,7 +20,10 @@ logTitle('Reverse Word')
 console.log(reverseWord('I am A Great human'))
 console.log('I ma A Taerg namuh')
 
+logTitle('Nearest Fibonacci')
+
+console.log(nearestFibonacci([15,1,3]))
+
 logTitle('Fizz Buzz')
 
 console.log(fizzBuzz(15))
-
