@@ -1,0 +1,11 @@
+{
+  "name": "ip-refactory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rizalarfiyan <rizal.arfiyan.23@gmail.com>",
+  "license": "ISC"
+}
