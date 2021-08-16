@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "scripts": {
-    "logic": "node ./src/index.js"
+    "test": "node ./index.js",
+    "test:logic": "node ./logic/run.js",
+    "test:json": "node ./json/run.js"
   },
   "author": "rizalarfiyan <rizal.arfiyan.23@gmail.com>",
   "license": "ISC"

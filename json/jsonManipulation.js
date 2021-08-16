@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const dataJson = 'src/data.json'
+const dataJson = 'json/data.json'
 
 const loadData = (location = null) => {
   const getJson = location || dataJson
