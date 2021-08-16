@@ -1,5 +1,5 @@
 import { logTitle } from './helpers.js'
-import { palindromeCheck } from './logicTest.js'
+import { palindromeCheck, betweenLapYear } from './logicTest.js'
 
 logTitle('Palindrome')
 
@@ -10,4 +10,8 @@ console.log(palindromeCheck('Ibu Ratna antar ubi'), true);
 console.log(palindromeCheck('Malas'), true);
 console.log(palindromeCheck('Makan nasi goreng'), true);
 console.log(palindromeCheck('Balonku ada lima'), true);
+
+logTitle('Lap Year')
+
+console.log(betweenLapYear())
 
