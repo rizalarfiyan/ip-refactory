@@ -1,7 +1,17 @@
-import { logTitle } from '../helpers.js'
-import { searchData } from './jsonManipulation.js'
+import chalk from 'chalk'
+import { logTitle, line } from '../helpers.js'
+import { searchData, loadData } from './jsonManipulation.js'
+
+const log = console.log
 
 const test = async () => {
+  log(line())
+  log(`${line(4)} JSON Manipulation`)
+  log(line())
+  log(`${line(4)} ${chalk.yellow('Data asli')}`)
+
+  log(await loadData())
+
   logTitle('Find items in the Meeting Room')
 
   console.log(await searchData('placement.name', 'Meeting Room'))

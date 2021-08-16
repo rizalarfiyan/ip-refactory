@@ -10,5 +10,8 @@
     "test:json": "node ./json/run.js"
   },
   "author": "rizalarfiyan <rizal.arfiyan.23@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
 }
