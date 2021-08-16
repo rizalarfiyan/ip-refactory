@@ -1,5 +1,5 @@
 import { logTitle } from './helpers.js'
-import { palindromeCheck, betweenLapYear } from './logicTest.js'
+import { palindromeCheck, betweenLapYear, reverseWord } from './logicTest.js'
 
 logTitle('Palindrome')
 
@@ -14,4 +14,10 @@ console.log(palindromeCheck('Balonku ada lima'), true);
 logTitle('Lap Year')
 
 console.log(betweenLapYear())
+
+logTitle('Reverse Word')
+
+console.log(reverseWord('I am A Great human'))
+console.log('I ma A Taerg namuh')
+
 

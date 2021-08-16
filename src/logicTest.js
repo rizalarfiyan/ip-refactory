@@ -20,4 +20,21 @@ const betweenLapYear = (from = 1900, to = 2020) => {
   return arr
 }
 
-export { palindromeCheck, betweenLapYear }
+const firstUpper = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+const checkFirstupper = (string) => {
+  return !!/[A-Z]/.exec(string[0])
+}
+
+const reverseWord = (string) => {
+  let arrStr = string.split(' ')
+  return arrStr.map((key) => {
+    const reverse = key.toLowerCase().split('').reverse().join('')
+    return !checkFirstupper(key) ? reverse : firstUpper(reverse)
+  }).join(' ')
+}
+
+
+export { palindromeCheck, betweenLapYear, reverseWord }
