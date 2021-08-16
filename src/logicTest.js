@@ -36,5 +36,14 @@ const reverseWord = (string) => {
   }).join(' ')
 }
 
+const fizzBuzz = (number, fizz = 3, buzz = 5, fizzBuzz = null) => {
+  let arr = []
+  const getFizzBuzz = fizzBuzz || (fizz * buzz)
+  for (let i = 1; i <= number; i++) {
+    const text = i % getFizzBuzz === 0 ? 'FizzBuzz' : i % fizz === 0 ? 'Fizz' : i % buzz === 0 ? 'Buzz' : i
+    arr.push(text)
+  }
+  return arr
+}
 
-export { palindromeCheck, betweenLapYear, reverseWord }
+export { palindromeCheck, betweenLapYear, reverseWord, fizzBuzz }
