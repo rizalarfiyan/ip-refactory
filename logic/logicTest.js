@@ -9,7 +9,7 @@ const lapYearCheck = (year) => {
 
 const betweenLapYear = (from = 1900, to = 2020) => {
   const loop = Math.abs(from - to) + 1;
-  const getMin = Math.min(from)
+  const getMin = Math.min(from, to)
   let arr = []
   for (let i = 0; i < loop; i++) {
     let year = getMin + i
